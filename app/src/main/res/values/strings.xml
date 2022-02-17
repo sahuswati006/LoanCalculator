@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">LoanCalculator</string>
+  <string name="five_year">5 Years</string>
+  <string name="ten_year">10 Years</string>
+  <string name="fifteen_year">15 Years</string>
+  <string name="twenty_year">20 Years</string>
+  <string name="twentyfifth_year">25 Years</string>
+  <string name="thirty_year">30 Years</string>
+
+</resources>

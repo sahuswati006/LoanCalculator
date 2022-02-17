@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical"
+  android:layout_height="match_parent"
+  tools:context=".LoanLengthActivity">
+
+  <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar_history_activity"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="#FF6200EE"
+    app:titleTextColor="@color/white"
+    android:visibility="visible"
+    app:title="Loan Length" />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/tvLoan"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:gravity="center"
+      android:text="Monthly Payment Year Wise"
+      android:textSize="20sp"
+      tools:visibility="visible" />
+
+    <LinearLayout
+      android:id="@+id/ll_5_loan_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#CCCCFF"
+      android:orientation="horizontal"
+      android:padding="15dp">
+
+      <TextView
+        android:id="@+id/tv5YrPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        tools:text="5 Yr" />
+
+      <TextView
+        android:id="@+id/tv5YrItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+
+        tools:text="Monthly Payment" />
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/ll_10Yr_loan_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#C3B1E1"
+      android:orientation="horizontal"
+      android:padding="15dp">
+
+      <TextView
+        android:id="@+id/tv10YrPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        tools:text="10 Yr" />
+
+      <TextView
+        android:id="@+id/tv10YrItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        tools:text="Monthly Payment" />
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/ll_15Yr_loan_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#CCCCFF"
+      android:orientation="horizontal"
+      android:padding="15dp">
+
+      <TextView
+        android:id="@+id/tv15YrPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        tools:text="15 Yr" />
+
+      <TextView
+        android:id="@+id/tv15YrItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        tools:text="Monthly Payment" />
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/ll_20Yr_loan_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#C3B1E1"
+      android:orientation="horizontal"
+      android:padding="15dp">
+
+      <TextView
+        android:id="@+id/tv20YrPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        tools:text="20 Yr" />
+
+      <TextView
+        android:id="@+id/tv20YrItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        tools:text="Monthly Payment" />
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/ll_25Yr_loan_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#CCCCFF"
+      android:orientation="horizontal"
+      android:padding="15dp">
+
+      <TextView
+        android:id="@+id/tv25YrPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        tools:text="25 Yr" />
+
+      <TextView
+        android:id="@+id/tv25YrItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        tools:text="Monthly Payment" />
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/ll_30Yr_loan_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#C3B1E1"
+      android:orientation="horizontal"
+      android:padding="15dp">
+
+      <TextView
+        android:id="@+id/tv30YrPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        tools:text="30 Yr" />
+
+      <TextView
+        android:id="@+id/tv30YrItem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#212121"
+        android:textSize="16sp"
+        tools:text="Monthly Payment" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+
+</LinearLayout>
