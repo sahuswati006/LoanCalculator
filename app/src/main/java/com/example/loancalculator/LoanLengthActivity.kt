@@ -24,8 +24,15 @@ class LoanLengthActivity : AppCompatActivity() {
 
 
     val loanModelObject = intent.getParcelableExtra<LoanLengthModel>("loanModel")
+    val loanDisplayAmt = intent.getStringExtra("loanAmount")
+    val loanInterestRt = intent.getStringExtra("loanInterestRt")
 
-    if (loanModelObject != null) {
+
+    if (loanModelObject != null && loanDisplayAmt!=null && loanInterestRt!=null) {
+
+      tvLoanDisplayAmt.text = "Loan Amount: $loanDisplayAmt"
+      tvLoanInterestDisplayVal.text = "Interest Rate: $loanInterestRt"
+
       tv5YrPosition.text = getString(R.string.five_year)
       tv10YrPosition.text = getString(R.string.ten_year)
       tv15YrPosition.text = getString(R.string.fifteen_year)
@@ -49,3 +56,4 @@ class LoanLengthActivity : AppCompatActivity() {
 
   }
 }
+

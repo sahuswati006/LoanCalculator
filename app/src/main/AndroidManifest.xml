@@ -14,10 +14,12 @@
     <activity
       android:name=".LoanLengthActivity"
       android:screenOrientation="portrait"
-      android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+      android:theme="@style/Theme.Material3.Light.NoActionBar"
       android:exported="false" />
     <activity
       android:name=".MainActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.Material3.Light.NoActionBar"
       android:exported="true">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />

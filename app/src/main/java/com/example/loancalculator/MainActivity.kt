@@ -52,6 +52,8 @@ class MainActivity : AppCompatActivity() {
     val loanModel = LoanLengthModel(fiveYearsMonth, tenYearsMonth, fifteenYearsMonth, twentyYearsMonth, twentyfifthYearsMonth, thirtyYearsMonth)
     val intent = Intent(this, LoanLengthActivity::class.java)
     intent.putExtra("loanModel", loanModel)
+    intent.putExtra("loanAmount", etLoanAmount.text.toString())
+    intent.putExtra("loanInterestRt", etInterestRate.text.toString())
     startActivity(intent)
   }
 

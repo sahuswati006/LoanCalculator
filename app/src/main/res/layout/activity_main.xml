@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/ll_view"
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
@@ -14,6 +14,13 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     android:orientation="vertical">
+
+
+    <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:contentDescription="@string/image"
+      android:src="@drawable/cool_logo" />
 
     <com.google.android.material.textfield.TextInputLayout
       android:id="@+id/tilLoanAmount"
@@ -34,12 +41,14 @@
       android:id="@+id/tilInterestRate"
       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
       android:layout_width="match_parent"
+      android:layout_marginTop="10dp"
       android:layout_height="wrap_content">
 
       <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/etInterestRate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:hint="Interest Rate"
         android:inputType="numberDecimal"
         android:textSize="16sp" />

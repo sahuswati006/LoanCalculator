@@ -24,10 +24,29 @@
     android:orientation="vertical">
 
     <TextView
+      android:id="@+id/tvLoanDisplayAmt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:text="Loan Amount"
+      android:textSize="20sp"
+      tools:visibility="visible" />
+
+    <TextView
+      android:id="@+id/tvLoanInterestDisplayVal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="10dp"
+      android:text="Interest Rate"
+      android:textSize="20sp"
+      tools:visibility="visible" />
+
+    <TextView
       android:id="@+id/tvLoan"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_margin="10dp"
+      android:padding="10dp"
+      android:background="@drawable/back"
       android:gravity="center"
       android:text="Monthly Payment Year Wise"
       android:textSize="20sp"
