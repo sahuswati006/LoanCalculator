@@ -28,6 +28,9 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
+  /**
+   Validate all the inputs before calculating
+   */
   private fun validateInput(): Boolean {
     var isValid = true
 
@@ -40,6 +43,9 @@ class MainActivity : AppCompatActivity() {
     return isValid
   }
 
+  /**
+   Logic for calculating the interest rate and passing values to second screen
+   */
   private fun calculate(loanAmt: Float, intrst: Float){
     val fiveYearsMonth = loanCalculation.getInterest(loanAmt, intrst, 5);
     val tenYearsMonth = loanCalculation.getInterest(loanAmt, intrst, 10);

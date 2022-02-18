@@ -1,9 +1,7 @@
 package com.example.loancalculator
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_loan_length.*
 
 class LoanLengthActivity : AppCompatActivity() {
@@ -22,7 +20,14 @@ class LoanLengthActivity : AppCompatActivity() {
       onBackPressed()
     }
 
+     display()
+    }
 
+
+  /**
+    Get the values from the intent and display all values in the respective textViews
+   */
+  private fun display(){
     val loanModelObject = intent.getParcelableExtra<LoanLengthModel>("loanModel")
     val loanDisplayAmt = intent.getStringExtra("loanAmount")
     val loanInterestRt = intent.getStringExtra("loanInterestRt")
@@ -47,13 +52,9 @@ class LoanLengthActivity : AppCompatActivity() {
       tv25YrItem.text = "$"+loanModelObject.twentyfifthYearsMthlyPymt.toString()
       tv30YrItem.text = "$"+loanModelObject.thirtyYearsMthlyPymt.toString()
 
-
     }
-
-
-
-
-
   }
+
+
 }
 
